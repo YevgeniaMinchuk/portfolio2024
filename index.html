@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="style.CSS">
+    <script src="https://kit.fontawesome.com/08840a3df3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="topbar">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <!-- Invisible title for accessibility -->
+            <title style="visibility: hidden;"> Yevgenia </title>
+            <ul id="sidemenu">
+                <li> <a href="#header"> Home </a></li>
+                <li> <a href="#about"> About </a></li>
+                <li> <a href="#portfolio"> Portfolio </a></li>
+                <li> <a href="#contact"> Contact </a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div class="container">
+            <div class="header-text">
+                <p> CS, Games & Interactive Media Student </p>
+                <h1> Hi, I'm <span> Yevgenia Minchuk </span>, <br> a senior at Michigan State University </h1>
+            </div>
+    </div>
+</div>
+<!-- About -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+                <img src="images/planet.png" width="500px">
+            </div>
+            <div class="about-col-2"> 
+                <h1 class="subtitle"> About Me </h1>
+                <p style="font-size: 20px;"> Hey there! I'm Yevgenia, and I'm all about mixing design, tech, and creativity. That's why I'm tackling a double major in Computer Science (BS) and Games and Interactive Media (BA) at MSU.
+                    <br> <br> Originally from Belarus, I speak both Russian and English fluently, and I'm currently studying Korean and Spanish for fun.
+                    With a background in both 2D and 3D art, I love bringing together technical skills and artistic vision. 
+                    Whether I'm building immersive games or developing software solutions, I'm all about finding that sweet spot where functionality meets beauty.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                    <p class="tab-links" onclick="opentab('education')"> Education </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Python</span><br></li>
+                        <li><span> C++ </span><br></li>
+                        <li><span> HTML </span><br></li>
+                        <li><span> CSS </span><br></li>
+                        <li><span> Blender </span><br></li>
+                        <li><span> Unity </span><br></li>
+                        <li><span> Assembly </span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> Teaching Assistant - Quantitative Literacy</span>
+                            <br> Supported students' success through office hours, grading, and feedback</li>
+                        <li><span> Teaching Assistant - College Algebra </span>
+                            <br>Supported students' success through office hours, grading, and feedback</li>
+                        <li><span> Summer Instructor iD Tech </span>
+                            <br> Created and taught lesson plans for programming, game design, and animation courses</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> Michigan State University </span>
+                            <br> Double major in Computer Science (Bachelor of Science) and Games & Interactive
+                            Media (Bachelor of Arts) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle2-port"> My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/facade.png" alt="">
+                <div class="layer">
+                    <h3> 3D Modular Building </h3>
+                    <p> Design of a building in Blender using Modular modeling. Inspired by Vietnamese architecture. </p>
+                    <br>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/phq9.png" alt="">
+                <div class="layer">
+                    <h3> Depression Screener </h3>
+                    <p> Design of the Patient Depression Questionnaire (PHQ-9) using HTML, CSS, and JavaScript </p>
+                    <br>
+                    <a class="link" href="https://symphonious-tanuki-3ad0d0.netlify.app"> Go to Website </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/phq9.png" alt="">
+                <div class="layer">
+                    <h3> Chatbot </h3>
+                    <p> Design of the Patient Depression Questionnaire (PHQ-9) using HTML, CSS, and JavaScript </p>
+                    <br>
+                    <a class="link" href="https://symphonious-tanuki-3ad0d0.netlify.app"> <span> Go to Website </span> </a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.artstation.com/yevgeniaminchuk" class="btn"> See More </a>
+    </div>
+</div>
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle2"> Contact Me </h1>
+                <p> <i class="fa-regular fa-paper-plane"></i> minchuky@msu.edu </p>
+                <p> <i class="fa-solid fa-phone"></i> (313) 701 - 1337</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yevgeniaminchuk/"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://www.artstation.com/yevgeniaminchuk"> <i class="fa-brands fa-artstation"></i> </i> </a>
+                </div>
+                <a href="Resume2024.pdf" download class="btn btn2"> Download Resume </a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3"> Submit </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Yevgenia Minchuk 2024 </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcont of tabcontents) {
+            tabcont.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-500px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6G7LVsMHQ9QBXEvsMxudTX0xUwb4f7MojU-3Gc0FJw9JfAHR5Fv38IhSU-iJ8GV9ivQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
