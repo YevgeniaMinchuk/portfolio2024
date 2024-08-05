@@ -30,7 +30,7 @@
     <div class="container">
             <div class="header-text">
                 <p> CS, Games & Interactive Media Student </p>
-                <h1> Hi, I'm <span> Yevgenia Minchuk </span>, <br> a senior at Michigan State University </h1>
+                <h1> Hi, I'm <span> Yevgenia chatMinchuk </span>, <br> a senior at Michigan State University </h1>
             </div>
     </div>
 </div>
@@ -38,19 +38,20 @@
 <div id="about">
     <div class="container">
         <div class="row">
-            <div class="about-col-1"> 
+            <!--<div class="about-col-1"> 
                 <img src="images/planet.png" width="500px">
-            </div>
+            </div>-->
             <div class="about-col-2"> 
                 <h1 class="subtitle"> About Me </h1>
-                <p style="font-size: 20px;"> Hey there! I'm Yevgenia, and I'm all about mixing design, tech, and creativity. That's why I'm tackling a double major in Computer Science (BS) and Games and Interactive Media (BA) at MSU.
-                    <br> <br> Originally from Belarus, I speak both Russian and English fluently, and I'm currently studying Korean and Spanish for fun.
+                <p style="font-size: 20px;"> <br> Hey there! I'm Yevgenia, and I'm all about mixing design, technology, and creativity. That's why I'm tackling a double major in Computer Science (BS) and Games and Interactive Media (BA) at MSU.
+                    <br> <br> Originally from Belarus, I speak both Russian and English fluently.
                     With a background in both 2D and 3D art, I love bringing together technical skills and artistic vision. 
-                    Whether I'm building immersive games or developing software solutions, I'm all about finding that sweet spot where functionality meets beauty.
+                    <br> <br> Whether I'm building immersive games or developing software solutions, I'm all about finding that sweet spot where functionality meets beauty.
                 </p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
                     <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                    <p class="tab-links" onclick="opentab('extra')"> Extracurriculars </p>
                     <p class="tab-links" onclick="opentab('education')"> Education </p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
@@ -59,6 +60,7 @@
                         <li><span> C++ </span><br></li>
                         <li><span> HTML </span><br></li>
                         <li><span> CSS </span><br></li>
+                        <li><span> JavaScript </span><br></li>
                         <li><span> Blender </span><br></li>
                         <li><span> Unity </span><br></li>
                         <li><span> Assembly </span><br></li>
@@ -66,12 +68,24 @@
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
+                        <li><span> Student-Athlete Tutor </span>
+                            <br> <p> Help students succeed academically through subject based one-on-one mentorship </p> </li>
                         <li><span> Teaching Assistant - Quantitative Literacy</span>
-                            <br> Supported students' success through office hours, grading, and feedback</li>
+                            <br> Supporting students' success through office hours, grading, and feedback</li>
                         <li><span> Teaching Assistant - College Algebra </span>
                             <br>Supported students' success through office hours, grading, and feedback</li>
                         <li><span> Summer Instructor iD Tech </span>
                             <br> Created and taught lesson plans for programming, game design, and animation courses</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="extra">
+                    <ul>
+                        <li><span> Research Assistant </span>
+                            <br> Facilitating focus groups with autistic teens, their caregivers, and professionals to identify improvement areas for mental health screeners
+                            <br> • Contributing to the design of the screeners <br> • Created Switchboard survey through Qualtrics for anonymous data collection </li>
+                        <li><span> Club Captain - MSU Squirrel Spotting </span>
+                            <br> Captain of popular leisure club promoting community building through interaction with squirrels 
+                            <br> • Plan activities, contribute to social media presence, host club meetings </li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -91,33 +105,76 @@
         <h1 class="subtitle2-port"> My Work </h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/facade.png" alt="">
+                <img src="images/chatbot.png" alt="">
                 <div class="layer">
-                    <h3> 3D Modular Building </h3>
-                    <p> Design of a building in Blender using Modular modeling. Inspired by Vietnamese architecture. </p>
+                    <h3> ChatBot </h3>
+                    <div class="tech-list">
+                        <span><i class="fa-brands fa-python"></i></span>
+                        <span><i class="fa-brands fa-html5"></i></span>
+                        <span><i class="fa-brands fa-css3-alt"></i></span>
+                        <span><i class="fa-brands fa-js"></i></span>
+                    </div>
+                    <p> This project is a retrieval-based chatbot application. Talk with Bolt about anything! </p>
                     <br>
+                    <a class="link" href="https://github.com/YevgeniaMinchuk/bolt"> Visit GitHub </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Artist Recommender.png" alt="">
+                <div class="layer">
+                    <h3> Artist Recommender </h3>
+                    <div class="tech-list">
+                        <span><i class="fa-brands fa-python"></i></span>
+                    </div>
+                    <p> A music recommendation system that suggests artists to users based on collaborative filtering techniques </p>
+                    <br>
+                    <a class="link" href="https://github.com/YevgeniaMinchuk/artist-recommender"> Visit GitHub </a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/phq9.png" alt="">
                 <div class="layer">
                     <h3> Depression Screener </h3>
-                    <p> Design of the Patient Depression Questionnaire (PHQ-9) using HTML, CSS, and JavaScript </p>
+                    <div class="tech-list">
+                        <span><i class="fa-brands fa-html5"></i></span>
+                        <span><i class="fa-brands fa-css3-alt"></i></span>
+                        <span><i class="fa-brands fa-js"></i></span>
+                    </div>
+                    <p> Fully interactive website design of the nine-item Patient Health Questionnaire (PHQ-9) </p>
                     <br>
-                    <a class="link" href="https://symphonious-tanuki-3ad0d0.netlify.app"> Go to Website </a>
+                    <a class="link" href="https://phq9-screener.netlify.app"> Visit Website </a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/phq9.png" alt="">
+                <img src="images/wordle.png" alt="">
                 <div class="layer">
-                    <h3> Chatbot </h3>
-                    <p> Design of the Patient Depression Questionnaire (PHQ-9) using HTML, CSS, and JavaScript </p>
+                    <h3> Wordle Copycat </h3>
+                    <div class="tech-list">
+                        <span><i class="fa-brands fa-html5"></i></span>
+                        <span><i class="fa-brands fa-css3-alt"></i></span>
+                        <span><i class="fa-brands fa-js"></i></span>
+                    </div>
+                    <p> A game inspired by the New York Times Wordle. Guess the 6-letter word within 7 tries! </p>
                     <br>
-                    <a class="link" href="https://symphonious-tanuki-3ad0d0.netlify.app"> <span> Go to Website </span> </a>
+                    <a class="link" href="https://wordle-yevgeniam.netlify.app"> Visit Website </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/budgetingapp.png" alt="">
+                <div class="layer">
+                    <h3> Budgeting App </h3>
+                    <div class="tech-list">
+                        <span><i class="fa-brands fa-html5"></i></span>
+                        <span><i class="fa-brands fa-css3-alt"></i></span>
+                        <span><i class="fa-brands fa-js"></i></span>
+                    </div>
+                    <p> A simple budgeting web application, users can input their total funds and allocate it to various spending categories </p>
+                    <br>
+                    <a class="link" href="https://financial-buget-app.netlify.app"> <span> Go to Website </span> </a>
                 </div>
             </div>
         </div>
-        <a href="https://www.artstation.com/yevgeniaminchuk" class="btn"> See More </a>
+        <a href="https://github.com/YevgeniaMinchuk" class="btn"> See More </a>
     </div>
 </div>
 <!-- Contact -->
